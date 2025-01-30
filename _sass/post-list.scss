@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 .posts-list-item {
+  font-size:12px;
   display: block;
   position: relative;
   line-height: 24px;
@@ -10,7 +11,7 @@
 
 .posts-list-item-name {
   width: calc(100% - 100px);
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .list-pagination {
