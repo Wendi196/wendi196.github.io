@@ -14,17 +14,6 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-```c
-#include <stdio.h>
-
-int main(int argc, char *argv[]) {
-  printf("Hello World!\n");
-  return 0;
-}
-
-// => prints 'Hello World!' to STDOUT.
-```
-
 Check out the [Jekyll Paper docs][jekyll-paper-docs] or [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. If you have questions or suggestions, you can create an issue to asking them on [Jekyll Paper Issues][jekyll-paper-issues] or [Jekyll Talk][jekyll-talk].
 
 [jekyll-paper-docs]: https://github.com/ghosind/Jekyll-Paper/wiki
