@@ -3,6 +3,10 @@
 
 @charset "utf-8";
 
+// Import the new fonts file first
+@import 'fonts';
+
+// Then import existing styles
 @import 'reset', 'container', 'float', 'header', 'footer', 'page', 'post-list',
   'post', 'highlighter', 'mobile', 'printer', 'task-list', 'mermaid';
 
