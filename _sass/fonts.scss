@@ -1,0 +1,72 @@
+/* ===== Method 1: Create a new file _sass/fonts.scss ===== */
+
+@charset "utf-8";
+
+/* Import Maple Mono from jsDelivr CDN */
+@import url('https://cdn.jsdelivr.net/gh/subframe7536/maple-font@gh-pages/dist/web/MapleMono-Variable.css');
+
+/* Alternative CDN URLs (use one of these):
+   @import url('https://cdn.jsdelivr.net/gh/subframe7536/maple-font@gh-pages/dist/web/MapleMono-TTF.css');
+   @import url('https://fonts.googleapis.com/css2?family=Maple+Mono:wght@400;500;600;700&display=swap');
+*/
+
+/* Font family fallback stack */
+$maple-mono-stack: 'Maple Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+
+/* Override base font families */
+* {
+  font-family: $maple-mono-stack;
+}
+
+/* Specific overrides for better typography */
+body {
+  font-family: $maple-mono-stack;
+  font-variation-settings: 'wght' 400; /* Default weight */
+  font-feature-settings: 'liga' 1, 'calt' 1; /* Enable ligatures */
+  line-height: 1.6;
+}
+
+/* Headers with slightly bolder weight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $maple-mono-stack;
+  font-variation-settings: 'wght' 500;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Code blocks with specific settings */
+pre, code {
+  font-family: $maple-mono-stack;
+  font-variation-settings: 'wght' 400;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Navigation with medium weight */
+.header-main-nav {
+  font-family: $maple-mono-stack;
+  font-variation-settings: 'wght' 450;
+}
+
+/* Post content with comfortable reading weight */
+.post-content, .page-content {
+  font-family: $maple-mono-stack;
+  font-variation-settings: 'wght' 400;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Math content - disable ligatures for better math rendering */
+.MathJax, .math-container, .inline-math-container {
+  font-feature-settings: 'liga' 0, 'calt' 0;
+}
+
+/* Responsive font sizes */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 15px;
+  }
+}
